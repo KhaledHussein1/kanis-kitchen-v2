@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"], // Inter for body text
+        serif: ["var(--font-playfair)", "serif"], // Playfair Display for headings
+      },
     },
   },
   plugins: [],

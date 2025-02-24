@@ -1,7 +1,10 @@
+import AnimatedSection from "@/components/AnimatedSection";
+
 const HeroSection = () => {
-    return (
-      <section className="flex items-center justify-center py-16">
-        <div className="relative bg-gradient-to-b from-[#f5e6ca] to-[#e0c3a0] rounded-2xl shadow-lg w-[90%] max-w-4xl p-12 text-center">
+  return (
+    <section className="flex items-center justify-center py-16 w-full">
+      <AnimatedSection>
+        <div className="relative bg-gradient-to-b from-[#f5e6ca] to-[#e0c3a0] rounded-2xl shadow-lg w-full max-w-4xl p-12 text-center">
           <h1 className="text-6xl font-extrabold text-[#5a3e2b] drop-shadow-lg">
             Welcome to Kani’s Kitchen
           </h1>
@@ -15,9 +18,9 @@ const HeroSection = () => {
             Explore Our Bakes
           </a>
         </div>
-      </section>
-    );
-  };
-  
-  export default HeroSection;
-  
+      </AnimatedSection>
+    </section>
+  );
+};
+
+export default HeroSection;
