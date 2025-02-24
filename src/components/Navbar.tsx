@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image"; // Import the Image component
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +17,15 @@ const Navbar = () => {
             >
               Kani's Kitchen
             </a>
+            {/* Floating Bread Icon */}
+            <div className="relative ml-4 animate-floating-bread">
+              <Image
+                src="/images/bread-icon.png" // Path to the bread icon
+                alt="Floating Bread"
+                width={40}
+                height={40}
+              />
+            </div>
             <button
               className="rounded-lg md:hidden focus:outline-none"
               onClick={() => setIsOpen(!isOpen)}
@@ -50,9 +60,7 @@ const Navbar = () => {
 
           {/* Navigation Menu */}
           <nav
-            className={`flex-col flex-grow ${
-              isOpen ? "flex" : "hidden"
-            } pb-4 md:pb-0 md:flex md:justify-end md:flex-row`}
+            className={`flex-col flex-grow ${isOpen ? "flex" : "hidden"} pb-4 md:pb-0 md:flex md:justify-end md:flex-row`}
           >
             <a
               className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600"

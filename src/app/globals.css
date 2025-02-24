@@ -29,3 +29,19 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif; /* Apply Playfair Display for headings */
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px); /* Adjust the height of the float */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-floating-bread {
+  animation: float 2s ease-in-out infinite;
+}
