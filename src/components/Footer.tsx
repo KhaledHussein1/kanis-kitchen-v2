@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-white border-t border-[#d4b998] py-4">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-        <p className="text-sm text-center md:text-left text-[#5a3e2b]">
+        <p className="text-sm text-center md:text-left">
           &copy; {new Date().getFullYear()} Kani’s Kitchen. All rights reserved.
         </p>
         <div className="flex space-x-4 mt-2 md:mt-0">
