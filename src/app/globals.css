@@ -5,16 +5,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff; /*off white #F6F4F0*/ 
+  --background: #faf9f6; /* Match navbar color */
   --foreground: #000000;
   --accent: #A18072;
   --accent-hover: #936b58;
   --navbar-bg: #faf9f6; /* Add transparency (70%) */
   --overlay-bg: rgba(161, 128, 114, 0.8);
-  /*--navbar-bg: #000000;  Dark gray 2d2d2d*/
   --navbar-text: black; /* White text */
 }
-
 
 body {
   color: var(--foreground);
@@ -56,7 +54,6 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--accent) !important;
 }
 
-
 .button-accent {
   display: inline-block;
   background-color: var(--accent) !important;
@@ -86,6 +83,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.animate-floating-bread {
+.animate-float {
   animation: float 2s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-in-out;
 }
