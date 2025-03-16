@@ -9,12 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        navbarFooter: "#EBEAEB",
+        heroBg: "#BDB2C3",
+        textColor: "#000000",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"], // Inter for body text
-        serif: ["var(--font-playfair)", "serif"], // Playfair Display for headings
+        bitter: ["'Bitter'", "serif"],
+        youngSerif: ["'Young Serif'", "serif"], // Added Young Serif font
       },
     },
   },
