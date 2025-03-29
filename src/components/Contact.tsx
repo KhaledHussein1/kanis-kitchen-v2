@@ -6,7 +6,7 @@ const Contact = () => {
     <section className="bg-heroBg p-8 flex justify-center items-center">
       <div className="max-w-2xl w-full bg-white p-8 rounded-lg shadow-lg">
         <h2 className="text-3xl text-center mb-6">
-          We'd Love to Hear From You!
+          We&apos;d Love to Hear From You!
         </h2>
         <form className="space-y-6">
           <div>

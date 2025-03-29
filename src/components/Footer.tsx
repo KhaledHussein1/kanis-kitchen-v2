@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -20,9 +21,9 @@ const Footer = () => {
               Explore
             </h3>
             <ul className="space-y-4"> {/* Increased spacing between links */}
-              <li><a href="/" className="font-bitter font-normal text-[18px] md:text-[20px] underline">About</a></li> {/* Increased font size */}
-              <li><a href="/about" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Contact</a></li> {/* Increased font size */}
-              <li><a href="/contact" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Order</a></li> {/* Increased font size */}
+              <li><Link href="/" className="font-bitter font-normal text-[18px] md:text-[20px] underline">About</Link></li> {/* Increased font size */}
+              <li><Link href="/about" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Contact</Link></li> {/* Increased font size */}
+              <li><Link href="/contact" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Order</Link></li> {/* Increased font size */}
             </ul>
           </div>
 
@@ -32,9 +33,9 @@ const Footer = () => {
               Follow Us
             </h3>
             <ul className="space-y-4"> {/* Increased spacing between links */}
-              <li><a href="#" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Email</a></li> {/* Increased font size */}
-              <li><a href="#" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Facebook</a></li> {/* Increased font size */}
-              <li><a href="#" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Instagram</a></li> {/* Increased font size */}
+              <li><Link href="#" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Email</Link></li> {/* Increased font size */}
+              <li><Link href="#" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Facebook</Link></li> {/* Increased font size */}
+              <li><Link href="#" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Instagram</Link></li> {/* Increased font size */}
             </ul>
           </div>
         </div>
