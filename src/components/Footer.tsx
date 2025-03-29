@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Left Column: Kani's Kitchen */}
         <div className="text-textColor font-youngSerif mb-12 md:mb-0 md:w-1/3 mt-4 ml-4"> {/* Moved text closer to the top and added margin-left */}
           <h2 className="text-[31px] md:text-[41px] font-normal">
-            Kani's Kitchen
+            Kani&apos;s Kitchen
           </h2>
         </div>
 
