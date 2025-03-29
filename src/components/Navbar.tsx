@@ -71,10 +71,10 @@ const Navbar = () => {
         <Link href="/" className={`${linkClasses("/")} text-5xl md:text-7xl font-bold`} onClick={toggleMenu}>
           Home
         </Link>
-        <Link href="/about" className={`${linkClasses("/")} text-5xl md:text-7xl font-bold`} onClick={toggleMenu}>
+        <Link href="/about" className={`${linkClasses("/about")} text-5xl md:text-7xl font-bold`} onClick={toggleMenu}>
           About
         </Link>
-        <Link href="/contact" className={`${linkClasses("/")} text-5xl md:text-7xl font-bold`} onClick={toggleMenu}>
+        <Link href="/contact" className={`${linkClasses("/contact")} text-5xl md:text-7xl font-bold`} onClick={toggleMenu}>
           Contact
         </Link>
       </div>
