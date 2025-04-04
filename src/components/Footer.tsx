@@ -4,38 +4,54 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-navbarFooter py-20 px-8"> {/* Increased top padding */}
-      <div className="max-w-8xl flex flex-col md:flex-row justify-between items-start">
-        {/* Left Column: Kani's Kitchen */}
-        <div className="text-textColor font-youngSerif mb-12 md:mb-0 md:w-1/3 mt-4 ml-4"> {/* Moved text closer to the top and added margin-left */}
-          <h2 className="text-[31px] md:text-[41px] font-normal">
+    <footer className="bg-navbarFooter py-20 px-6">
+      <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-32">
+        {/* Kani's Kitchen */}
+        <div className="text-textColor font-youngSerif flex-1">
+          <h2 className="text-[31px] lg:text-[41px] font-normal">
             Kani&apos;s Kitchen
           </h2>
         </div>
 
-        {/* Middle Columns: Explore and Follow Us */}
-        <div className="flex flex-col md:flex-row gap-24 md:gap-32 w-full md:w-1/3 mb-12 md:mb-0 mt-8 ml-16"> {/* Increased margin-left to move sections more to the right */}
-          {/* Explore Column */}
-          <div className="text-textColor w-full md:w-auto">
-            <h3 className="text-[20px] md:text-[24px] font-bold font-bitter mb-6"> {/* Increased font size */}
+        {/* Explore + Follow Us */}
+        <div className="flex flex-col sm:flex-row gap-12 flex-1">
+          {/* Explore */}
+          <div className="text-textColor">
+            <h3 className="text-[20px] lg:text-[24px] font-bold font-bitter mb-6">
               Explore
             </h3>
-            <ul className="space-y-4"> {/* Increased spacing between links */}
-              <li><Link href="/" className="font-bitter font-normal text-[18px] md:text-[20px] underline">About</Link></li> {/* Increased font size */}
-              <li><Link href="/about" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Contact</Link></li> {/* Increased font size */}
-              <li><Link href="/contact" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Order</Link></li> {/* Increased font size */}
+            <ul className="space-y-4">
+              <li><Link href="/about" className="font-bitter font-normal text-[18px] lg:text-[20px] underline">About</Link></li>
+              <li><Link href="/contact" className="font-bitter font-normal text-[18px] lg:text-[20px] underline">Contact</Link></li>
+              <li>
+                <a
+                  href="https://www.hotplate.com/kaniskitchen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bitter font-normal text-[18px] lg:text-[20px] underline"
+                >
+                  Order
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Follow Us Column */}
-          <div className="text-textColor w-full md:w-auto">
-            <h3 className="text-[20px] md:text-[24px] font-bold font-bitter mb-6"> {/* Increased font size */}
-              Follow Us
+          {/* Follow Us */}
+          <div className="text-textColor">
+            <h3 className="text-[20px] lg:text-[24px] font-bold font-bitter mb-6">
+              Socials
             </h3>
-            <ul className="space-y-4"> {/* Increased spacing between links */}
-              <li><Link href="#" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Email</Link></li> {/* Increased font size */}
-              <li><Link href="#" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Facebook</Link></li> {/* Increased font size */}
-              <li><Link href="#" className="font-bitter font-normal text-[18px] md:text-[20px] underline">Instagram</Link></li> {/* Increased font size */}
+            <ul className="space-y-4">
+            <li>
+              <a
+                href="https://www.instagram.com/kaniskitchenct/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bitter font-normal text-[18px] lg:text-[20px] underline"
+              >
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
         </div>

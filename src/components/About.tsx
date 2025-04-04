@@ -10,13 +10,7 @@ const About = () => {
         <div className="max-w-xl text-left">
           <h1 className="font-normal text-[clamp(42px,_6vw,_64px)]">About Me</h1>
           <p className="text-xl font-normal mt-4">
-            Hi, I&apos;m Kani, the baker behind Kani&apos;s Kitchen. Baking has always been a passion of mine, and after years of feeding little ones as a nanny, I was inspired to create delicious treats that both toddlers and adults can enjoy.
-          </p>
-          <p className="text-xl font-normal mt-4">
-            At Kani’s Kitchen, I specialize in sourdough baking, other artisan breads, and classic treats, along with a special selection of toddler-friendly baked goods—including my signature bee-themed muffins! Every bake is made with care in my home kitchen, using simple, high-quality ingredients. Whether you’re looking for nostalgic flavors or something fun and nutritious for your little one, I&apos;m here to bring joy to every bite.
-          </p>
-          <p className="text-xl font-normal mt-4">
-            Thank you for supporting my home bakery! I can&apos;t wait to share my creations with you.
+          Hi, I&apos;m Kani, the baker behind Kani&apos;s Kitchen. Baking has always been a passion of mine, and I love creating delicious treats that bring people together. At Kani&apos;s Kitchen, I specialize in sourdough baking and classic treats — all made with care in my home kitchen using simple, high-quality ingredients. Whether you&apos;re craving the comforting taste of fresh-baked bread or a sweet treat to brighten your day, I&apos;m here to bring joy to every bite.
           </p>
         </div>
       </div>

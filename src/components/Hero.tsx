@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -19,9 +20,15 @@ const Hero = () => {
           <p className="text-xl mt-4 font-normal">
             Place your order and reserve a Sunday pickup time below to enjoy fresh-baked goods all week long!
           </p>
-          <button className="mt-8 px-10 py-5 bg-black text-heroBg font-normal text-xl rounded-tl-[50px] rounded-br-[50px] hover:bg-black/90 transition-all">
-            Order
-          </button>
+          <Link 
+            href="https://www.hotplate.com/kaniskitchen" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <button className="mt-8 px-10 py-5 bg-black text-heroBg font-normal text-xl rounded-tl-[50px] rounded-br-[50px] hover:bg-black/90 transition-all">
+              Order
+            </button>
+          </Link>
         </div>
       </div>
     </section>

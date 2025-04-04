@@ -46,7 +46,15 @@ const Navbar = () => {
         </div>
         {/* Logo */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <Image src="/images/logo.jpg" alt="Logo" width={190} height={150} />
+          <Link href="/">
+            <Image
+              src="/images/logo.jpg"
+              alt="Kani's Kitchen Logo"
+              width={190}
+              height={150}
+              className="cursor-pointer"
+            />
+          </Link>
         </div>
         {/* Hamburger Icon for small screens */}
         <div className="ml-auto flex flex-col gap-1.5 cursor-pointer md:hidden" onClick={toggleMenu}>
